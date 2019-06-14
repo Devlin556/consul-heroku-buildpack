@@ -1,7 +1,7 @@
 #!/bin/sh
+# bin/release <build-dir>
 
 cat << EOF
----
 default_process_types:
   web: $1/consul agent -ui -data-dir=$1/consul.d -client=0.0.0.0 -http-port=$PORT
 EOF
