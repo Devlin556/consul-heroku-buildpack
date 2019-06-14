@@ -13,4 +13,6 @@ echo "-----> Downloading consul binary package from $consul_download_url"
 curl -L --silent $consul_download_url > $1/$consul_package_version
 cd $1 && unzip $consul_package_version && rm $consul_package_version
 
+ls
+
 echo "Consul installation complete" | indent
