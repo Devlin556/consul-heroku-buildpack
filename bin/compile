@@ -10,11 +10,11 @@ consul_package_version="1.5.1.zip"
 
 echo "-----> Downloading consul binary package from $consul_download_url"
 
-curl -L --silent $consul_download_url > $1/$consul_package_version
-cd $1 && unzip $consul_package_version && rm $consul_package_version
+curl -L --silent $consul_download_url > $1/bin/$consul_package_version
+cd $1/bin && unzip $consul_package_version && rm $consul_package_version
 
 ls
 
-$1/consul
+$1/bin//consul
 
 echo "Consul installation complete" | indent
