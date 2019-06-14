@@ -3,6 +3,6 @@
 cat << EOF
 ---
 default_process_types:
-  web: bin/consul agent -ui -data-dir=$1/consul.d -client=0.0.0.0 -http-port=$PORT
+  web: consul agent -ui -data-dir=$1/consul.d -client=0.0.0.0 -http-port=$PORT
 EOF
 
