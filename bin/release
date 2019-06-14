@@ -3,6 +3,6 @@
 cat << EOF
 ---
 default_process_types:
-  consul: ls
+  consul: ls $1
 EOF
 
