@@ -4,9 +4,8 @@ indent() {
   sed -u 's/^/       /'
 }
 
-consul_url="https://dl.bintray.com/mitchellh/consul"
-consul_package_version="0.5.0_linux_amd64.zip"
-consul_download_url="$consul_url/$consul_package_version"
+consul_url="https://releases.hashicorp.com/consul/1.5.1/consul_1.5.1_linux_amd64.zip"
+consul_download_url="$consul_url"
 
 echo "-----> Downloading consul binary package from $consul_download_url"
 
