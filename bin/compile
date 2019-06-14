@@ -15,6 +15,6 @@ cd $1 && unzip $consul_package_version && rm $consul_package_version
 
 ls
 
-consul
+$1/consul
 
 echo "Consul installation complete" | indent
