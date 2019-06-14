@@ -3,6 +3,6 @@
 cat << EOF
 ---
 default_process_types:
-  web: bin/consul agent -server -bootstrap-expect 1 -data-dir $1/consul.d
+  web: bin/consul agent -ui -data-dir=$1/consul.d -client=0.0.0.0
 EOF
 
